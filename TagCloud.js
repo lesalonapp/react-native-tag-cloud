@@ -1,8 +1,8 @@
-import React, { Component, propTypes } from 'react';
+import React, { Component } from 'react';
 import {
   StyleSheet,
   Text,
-  View
+  View,
 } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -97,17 +97,6 @@ export default class TagCloud extends Component {
     );
   }
 }
-
-TagCloud.propTypes = {
-  tagList: React.PropTypes.array,
-  colorList: React.PropTypes.array,
-  minFontSize: React.PropTypes.number,
-  style: View.propTypes.style,
-  tagPaddingLeft: React.PropTypes.number,
-  tagPaddingTop: React.PropTypes.number,
-  tagPaddingRight: React.PropTypes.number,
-  tagPaddingBottom: React.PropTypes.number,
-};
 
 TagCloud.defaultProps = {
   tagList: [],
