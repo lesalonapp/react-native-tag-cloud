@@ -33,6 +33,7 @@ export default class TagCloud extends Component {
       const tagStyle = {
         fontSize: this.props.minFontSize + (item.point * 4),
         color: this.props.colorList[item.point],
+        fontFamily: this.props.fontFamily,
       };
 
       return (
@@ -106,4 +107,5 @@ TagCloud.defaultProps = {
   tagPaddingTop: 30,
   tagPaddingRight: 30,
   tagPaddingBottom: 30,
+  fontFamily: 'Arial',
 };
